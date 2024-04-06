@@ -1,0 +1,16 @@
+{
+    "author": "",
+    "description": "",
+    "devDependencies": {
+        "@babel/cli": "^7.24.1",
+        "@babel/core": "^7.24.4",
+        "@babel/preset-env": "^7.24.4"
+    },
+    "license": "ISC",
+    "main": "index.js",
+    "name": "kirillov",
+    "scripts": {
+        "build": "babel src -d build"
+    },
+    "version": "1.0.0"
+}
