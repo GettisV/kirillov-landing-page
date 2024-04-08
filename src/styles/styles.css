@@ -2,5 +2,70 @@
 @import url(fonts.css);
 
 html {
-    font-family: "Bartina";
+    font-family: "Bartina" !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+    color: whitesmoke;
+}
+
+nav > * {
+    padding: 6px 0;
+}
+
+.header {
+    position: relative;
+}
+
+.info-block {
+    position: absolute;
+    bottom: 100px;
+    left: 10%;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.title,
+.text {
+    opacity: 0.8;
+    letter-spacing: 0.05rem;
+}
+
+.button-gallery-open {
+    opacity: 0.8;
+    border: 4px solid whitesmoke;
+    padding: 25px 60px;
+}
+
+/* Модалка */
+.hystmodal__window {
+    background: transparent;
+}
+
+.hystmodal__wrap {
+    backdrop-filter: blur(4px);
+}
+
+/* Скроллбар */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(33, 33, 33);
+}
+
+::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
