@@ -7,6 +7,7 @@
             content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
         />
         <!-- Плагины -->
+        <script src="./plugins/tailwind/tailwindcss.js"></script>
         <link rel="stylesheet" href="./plugins/lightGallery/css/lightgallery-bundle.min.css" />
         <link rel="stylesheet" href="./plugins/hystModal/hystmodal.min.css">
 
@@ -15,44 +16,44 @@
         <title>Ведущий мероприятий — Кириллов Артем</title>
     </head>
     <body>
-        <div class="grid container mx-auto p-3">
-            <nav
-                class="flex items-left justify-center flex-col text-2xl py-2 lg:py-2"
-            >
-                <div class="social-media flex items-center">
-                    <span class="pr-2 uppercase">я в соц. сетях </span>
-                    <button>
-                        <a href="https://t.me/ArtKirill_51">
-                            <img
-                                src="./assets/images/social-media/telegram.svg"
-                                alt="Telegram"
-                            />
-                        </a>
-                    </button>
-                    <button>
-                        <a href="https://vk.com/tema_kirillov">
-                            <img
-                                src="./assets/images/social-media/vk.svg"
-                                alt="VK"
-                            />
-                        </a>
-                    </button>
-                    <button>
-                        <a href="https://api.whatsapp.com/send/?phone=79009349325&text&type=phone_number&app_absent=0">
-                            <img
-                                src="./assets/images/social-media/whatsapp.svg"
-                                alt="Whatsapp"
-                            />
-                        </a>
-                    </button>
-                </div>
-                <div class="contact">
-                    <a class="contact__telephone" href="tel:+79009349325"
-                        >+7 900 934-93-25</a
-                    >
-                </div>
-            </nav>
+        <div class="container mx-auto p-3">
             <header class="header">
+                <div
+                    class="flex items-left justify-center flex-col text-2xl py-2 lg:py-2"
+                >
+                    <div class="social-media flex items-center">
+                        <span class="pr-2 uppercase">я в соц. сетях </span>
+                        <button>
+                            <a href="https://t.me/ArtKirill_51">
+                                <img
+                                    src="./assets/images/social-media/telegram.svg"
+                                    alt="Telegram"
+                                />
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://vk.com/tema_kirillov">
+                                <img
+                                    src="./assets/images/social-media/vk.svg"
+                                    alt="VK"
+                                />
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://api.whatsapp.com/send/?phone=79009349325&text&type=phone_number&app_absent=0">
+                                <img
+                                    src="./assets/images/social-media/whatsapp.svg"
+                                    alt="Whatsapp"
+                                />
+                            </a>
+                        </button>
+                    </div>
+                    <div class="contact">
+                        <a class="contact__telephone" href="tel:+79009349325"
+                            >+7 900 934-93-25</a
+                        >
+                    </div>
+                </div>
                 <img
                     src="./assets/images/main.png"
                     class="host-event-image rounded-xl w-full lg:w-[32rem] sm:w-[24rem] mx-auto"
@@ -71,30 +72,84 @@
                     </h3>
                 </section>
             </header>
-            <section class="mt-36">
+            <section class="mt-44">
                 <h1 class="title text-8xl font-extrabold">обо мне</h1>
-                <div class="flex">
+                <div class="flex items-start">
                     <div class="text text-5xl pr-4">
-                        <div class="mt-6">
+                        <p class="mt-12">
                             За 8 лет работы в ивент-сфере я провел более трехсот мероприятий и это не только свадьбы, корпоративы и юбилеи, это и Федеральные и Международные мероприятия.
-                        </div>
-                        <div class="mt-6">
+                        </p>
+                        <p class="mt-12">
                             Каждую среду вы могли слышать мой голос на Power Hit Radio Мурманск в каморке News, а также видеть на самых масштабных проектах города.
-                        </div>
-                        <div class="mt-6">
+                        </p>
+                        <p class="mt-12">
                             Моя основная задача сделать мероприятие незабываемым, а в этом помогает многолетний стаж в юморе, который практикую каждый день, когда пишем шутки командам КВН.
-                        </div>
-                        <div class="mt-6">
+                        </p>
+                        <p class="mt-12">
                             Среди огромного количества мероприятий каждое из них индивидуально и требует большой подготовки.
-                        </div>
+                        </p>
                     </div>
                     <img class="object-cover w-1/3 rounded-xl" src="./assets/images/about-me.jpg" />
                 </div>
             </section>
-            <section class="mt-36">
+            <section class="mt-32">
                 <h1 class="title text-8xl font-extrabold">Мероприятия</h1>
-                <div class="flex">
+                <div class="events flex flex-wrap mt-6">
                     <div class="text text-5xl pr-4">
+                        <ul class="list-inside list-image-[url(./assets/images/icons/done.svg)]">
+                            <li>Дни рождения</li>
+                            <li>Юбилеи</li>
+                            <li>Свадьбы</li>
+                            <li>Корпоративы</li>
+                            <li>Награждения</li>
+                            <li>Тимбилдинги</li>
+                            <li>Протокольные мероприятия</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-[40rem] h-80 rounded-xl overflow-hidden">
+                            <video class="w-full" autoplay loop muted>
+                                <source src="./assets/videos/video minify.mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="mt-32 flex justify-center">
+                <button data-hystmodal="#myModal" class="button-gallery-open rounded-xl text-8xl font-regular flex items-center" type="button">
+                    Галерея <img class="ml-4" src="./assets/images/icons/gallery.svg" alt="gallery">
+                </button>
+            </div>
+             <section class="mt-32 mb-32">
+                <h1 class="title text-8xl font-extrabold">Прайс-лист</h1>
+                <div class="flex mt-6">
+                    <div class="text text-5xl pr-4">
+                        <p class="mt-8">
+                            1 ведущий — <span class="emphasis">3</span>часа: <span class="emphasis">24.000</span>₽ (Конкурсная программа + оборудование проектор + экран для проектора + реквизит трансфер, микрофон и колонка)
+                        </p>
+                        <p class="mt-8">
+                            1 ведущий — <span class="emphasis">4</span>часа: <span class="emphasis">30.000</span>₽ (Конкурсная программа + оборудование: проектор + экран для проектора + реквизит + трансфер, колонка и микрофон)</p>
+                        <p class="mt-8">
+                            2 ведущих — <span class="emphasis">3</span> часа: <span class="emphasis">30.000</span>₽
+                        </p>
+                        <p class="mt-8">
+                            2 ведущих — <span class="emphasis">4</span> часа: <span class="emphasis">40.000</span>₽
+                        </p>
+                        <p class="mt-8">
+                            2 ведущих — <span class="emphasis">5</span> часов: <span class="emphasis">50.000</span>₽ + диджей отдельно</p>
+                        <p class="mt-8">
+                            Средняя стоимость: <span class="emphasis">2.500</span>—<span class="emphasis">3.000</span>₽/Ч
+                        </p>
+                        <p class="mt-8">
+                            <span class="emphasis">3</span>—<span class="emphasis">4</span> часа диджей на мероприятие будет стоить <span class="emphasis">3.000</span>₽/Ч
+                        </p>
+                        <p class="mt-8">
+                            От <span class="emphasis">5</span> часов <span class="emphasis">2.500</span>/₽ (Микрофоны, колонки, микшерный пульт, музыка на заказ)
+                        </p>
+                        <p class="mt-8">
+                            Ведущие: неоднократные финалисты Высшей Лиги КВН, а так же авторы и руководители многих телевизионных проектов.
+                            Ведем мероприятия на протяжении 6 лет, в том числе Всероссийские и международные мероприятия
+                        </p>
 
                     </div>
                 </div>
@@ -114,7 +169,7 @@
                                 <img src="./assets/images/gallery/2.jpg" />
                             </a>
                             <a href="./assets/images/gallery/3.jpg">
-                                <img alt="img3" src="./assets/images/gallery/3.jpg" />
+                                <img src="./assets/images/gallery/3.jpg" />
                             </a>
                             <a href="./assets/images/gallery/1.jpg">
                                 <img src="./assets/images/gallery/1.jpg" />
@@ -123,7 +178,7 @@
                                 <img src="./assets/images/gallery/2.jpg" />
                             </a>
                             <a href="./assets/images/gallery/3.jpg">
-                                <img alt="img3" src="./assets/images/gallery/3.jpg" />
+                                <img src="./assets/images/gallery/3.jpg" />
                             </a>
                             <a href="./assets/images/gallery/1.jpg">
                                 <img src="./assets/images/gallery/1.jpg" />
@@ -132,23 +187,17 @@
                                 <img src="./assets/images/gallery/2.jpg" />
                             </a>
                             <a href="./assets/images/gallery/3.jpg">
-                                <img alt="img3" src="./assets/images/gallery/3.jpg" />
+                                <img src="./assets/images/gallery/3.jpg" />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-32 text-center">
-                <button data-hystmodal="#myModal" class="button-gallery-open rounded-xl text-8xl font-regular" type="button">Галерея</button>
-            </div>
 
             <!-- Плагины -->
             <script src="./plugins/lightGallery/lightgallery.min.js"></script>
-            <!-- <script defer src="./plugins/lightGallery/lg-thumbnail.umd.js"></script>
-            <script defer src="./plugins/lightGallery/lg-zoom.umd.js"></script> -->
             <script src="./plugins/hystModal/hystmodal.min.js"></script>
-            <script src="./plugins/tailwind/tailwindcss.js"></script>
 
             <script type="module" src="./scripts/index.mjs"></script>
     </body>

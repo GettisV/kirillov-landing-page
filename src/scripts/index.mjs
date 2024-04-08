@@ -23,3 +23,5 @@ const Modal = new HystModal({
 lightGallery(document.getElementById('animated-thumbnails-gallery'), {
     thumbnail: true,
 });
+
+let table = new DataTable('#myTable');
