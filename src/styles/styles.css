@@ -18,6 +18,7 @@ img {
 }
 
 body {
+    transition: all 0.2s ease-in;
     background-color: rgb(33, 33, 33);
     color: whitesmoke;
 }
@@ -28,6 +29,46 @@ nav > * {
 
 .header {
     position: relative;
+}
+
+.social-media__btn {
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+}
+.social-media__btn:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in;
+}
+
+.navbar {
+    position: absolute;
+    top: 30%;
+    right: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.navbar__btn {
+    margin: 5px;
+    border-radius: 0.75rem;
+    border: 1px solid whitesmoke;
+    transition: all 0.3s ease-in;
+}
+
+.navbar__btn:hover {
+    color: #555;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    transition: all 0.3s ease-in;
 }
 
 .info-block {
@@ -50,6 +91,19 @@ nav > * {
     opacity: 0.85;
     border: 5px solid whitesmoke;
     padding: 30px 90px;
+    transition: all 0.3s ease-in;
+}
+
+.button-gallery-open:hover {
+    opacity: 1;
+    color: #555;
+    background-color: whitesmoke;
+    transition: all 0.3s ease-in;
+}
+
+.button-gallery-open:hover .gallery-icon {
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in;
 }
 
 .events {
@@ -66,10 +120,11 @@ nav > * {
 /* Модалка */
 .hystmodal__window {
     background: transparent;
+    width: 1300px;
 }
 
-.hystmodal__wrap {
-    backdrop-filter: blur(4px);
+.hystmodal {
+    backdrop-filter: blur(5px);
 }
 
 /* Скроллбар */
