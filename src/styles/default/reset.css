@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    display: block;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}

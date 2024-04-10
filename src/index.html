@@ -6,27 +6,25 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
         />
+
         <!-- Плагины -->
-        <script src="./plugins/tailwind/tailwindcss.js"></script>
         <link rel="stylesheet" href="./plugins/lightGallery/css/lightgallery-bundle.min.css" />
         <link rel="stylesheet" href="./plugins/hystModal/hystmodal.min.css">
 
         <link rel="stylesheet" href="./styles/styles.css" />
-        <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+        <link rel="icon" type="image/png" href="./assets/images/icons/favicon.png" />
         <title>Ведущий мероприятий — Кириллов Артем</title>
     </head>
     <body>
-        <div class="container mx-auto p-3">
-            <header class="header">
-                <div
-                    class="flex items-left justify-center flex-col text-2xl py-2 lg:py-2"
-                >
-                    <div class="social-media flex items-center">
-                        <p class="pr-2 uppercase">я в соц. сетях </p>
+        <div class="container">
+            <header>
+                <div class="contacts-block">
+                    <div class="social-media">
+                        <p class="social-media__text">я в соц. сетях </p>
                         <button class="social-media__btn" type="button">
                             <a href="https://t.me/ArtKirill_51">
                                 <img
-                                    src="./assets/images/social-media/telegram.svg"
+                                    src="./assets/images/icons/social-media/telegram.svg"
                                     alt="Telegram"
                                 />
                             </a>
@@ -34,7 +32,7 @@
                         <button class="social-media__btn" type="button">
                             <a href="https://vk.com/tema_kirillov">
                                 <img
-                                    src="./assets/images/social-media/vk.svg"
+                                    src="./assets/images/icons/social-media/vk.svg"
                                     alt="VK"
                                 />
                             </a>
@@ -42,91 +40,107 @@
                         <button class="social-media__btn" type="button">
                             <a href="https://api.whatsapp.com/send/?phone=79009349325&text&type=phone_number&app_absent=0">
                                 <img
-                                    src="./assets/images/social-media/whatsapp.svg"
+                                    src="./assets/images/icons/social-media/whatsapp.svg"
                                     alt="Whatsapp"
                                 />
                             </a>
                         </button>
                     </div>
-                    <div class="contact">
-                        <a class="contact__telephone" href="tel:+79009349325"
-                            >+7 900 934-93-25</a
-                        >
+                    <a class="telephone" href="tel:+79009349325"
+                        >+7 900 934-93-25</a
+                    >
+                </div>
+                <div class="host-event-info">
+                    <div class="host-event-wrapper">
+                        <img
+                            src="./assets/images/main.png"
+                            class="host-event-image host-event-image-skeleton"
+                            alt="main"
+                        />
+
+                        <div class="host-event-about">
+                            <h1
+                                class="host-event-about__name"
+                            >
+                                артем кириллов
+                            </h1>
+                            <h3
+                                class="host-event-about__activity"
+                            >
+                                ведущий мероприятий
+                            </h3>
+                        </div>
+
+                        <nav class="navbar">
+                            <button type="button" class="navbar__btn">
+                                <a href="#about-me">Обо мне</a>
+                            </button>
+                            <button type="button" class="navbar__btn">
+                                <a href="#events">Мероприятия</a>
+                            </button>
+                            <button type="button" class="navbar__btn">
+                                <a href="#gallery">Галерея</a>
+                            </button>
+                            <button type="button" class="navbar__btn">
+                                <a href="#price-list">Прайс-лист</a>
+                            </button>
+                        </nav>
                     </div>
                 </div>
-                <img
-                    src="./assets/images/main.png"
-                    class="host-event-image rounded-xl w-full lg:w-[32rem] sm:w-[24rem] mx-auto"
-                    alt="main"
-                />
-                <div class="info-block">
-                    <h1
-                        class="info-block__name text-8xl font-extrabold uppercase"
-                    >
-                        артем кириллов
-                    </h1>
-                    <h3
-                        class="info-block__activity text-4xl font-light uppercase"
-                    >
-                        ведущий мероприятий
-                    </h3>
-                </div>
-                <nav class="navbar">
-                    <button type="button" class="navbar__btn">
-                        <a href="#about-me">Обо мне</a>
-                    </button>
-                    <button type="button" class="navbar__btn">
-                        <a href="#events">Мероприятия</a>
-                    </button>
-                    <button type="button" class="navbar__btn">
-                        <a href="#gallery">Галерея</a>
-                    </button>
-                    <button type="button" class="navbar__btn">
-                        <a href="#price-list">Прайс-лист</a>
-                    </button>
-                </nav>
             </header>
 
-            <section class="mt-44">
+            <section class="about-me-info-block info-block">
                 <a name="about-me"></a>
-                <h1 class="title text-8xl font-extrabold">обо мне</h1>
-                <div class="flex items-start">
-                    <div class="text text-5xl pr-4">
-                        <p class="mt-12">
+                <h1 class="title">обо мне</h1>
+                <div class="about-me-text-block">
+                    <div class="about-me-text-block__text text">
+                        <p class="mt20">
                             За 8 лет работы в ивент-сфере я провел более трехсот мероприятий и это не только свадьбы, корпоративы и юбилеи, это и Федеральные и Международные мероприятия.
                         </p>
-                        <p class="mt-12">
+                        <p class="mt20">
                             Каждую среду вы могли слышать мой голос на Power Hit Radio Мурманск в каморке News, а также видеть на самых масштабных проектах города.
                         </p>
-                        <p class="mt-12">
+                        <p class="mt20">
                             Моя основная задача сделать мероприятие незабываемым, а в этом помогает многолетний стаж в юморе, который практикую каждый день, когда пишем шутки командам КВН.
                         </p>
-                        <p class="mt-12">
+                        <p class="mt20">
                             Среди огромного количества мероприятий каждое из них индивидуально и требует большой подготовки.
                         </p>
                     </div>
-                    <img class="object-cover w-1/3 rounded-xl" src="./assets/images/about-me.jpg" />
+                    <img class="about-me-text-block__image" src="./assets/images/about-me.jpg" />
                 </div>
             </section>
 
-            <section class="mt-32">
+            <section class="info-block">
                 <a name="events"></a>
-                <h1 class="title text-8xl font-extrabold">Мероприятия</h1>
-                <div class="events flex flex-wrap mt-6">
-                    <div class="text text-5xl pr-4">
-                        <ul class="list-inside list-image-[url(./assets/images/icons/done.svg)]">
-                            <li>Дни рождения</li>
-                            <li>Юбилеи</li>
-                            <li>Свадьбы</li>
-                            <li>Корпоративы</li>
-                            <li>Награждения</li>
-                            <li>Тимбилдинги</li>
-                            <li>Протокольные мероприятия</li>
-                        </ul>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="w-[40rem] h-80 rounded-xl overflow-hidden">
-                            <video class="w-full" autoplay loop muted>
+                <h1 class="title">Мероприятия</h1>
+                <div class="events-block">
+                    <ul class="events-list text">
+                        <div class="events-list__item">
+                            <img src="./assets/images/icons/done.svg" alt="accept"><li>Дни рождения</li>
+                        </div>
+                        <div class="events-list__item">
+                            <img src="./assets/images/icons/done.svg" alt="accept"><li>Юбилеи</li>
+                        </div>
+                        <div class="events-list__item">
+                            <img src="./assets/images/icons/done.svg" alt="accept"><li>Свадьбы</li>
+                        </div>
+                        <div class="events-list__item">
+                            <img src="./assets/images/icons/done.svg" alt="accept"><li>Корпоративы</li>
+                        </div>
+                        <div class="events-list__item">
+                            <img src="./assets/images/icons/done.svg" alt="accept"><li>Награждения</li>
+                        </div>
+                        <div class="events-list__item">
+                            <img src="./assets/images/icons/done.svg" alt="accept"><li>Тимбилдинги</li>
+                        </div>
+                        <div class="events-list__item">
+                            <img src="./assets/images/icons/done.svg" alt="accept"><li>Протокольные мероприятия</li>
+                        </div>
+                    </ul>
+                    <div class="events-block__video-block">
+                        <div class="events-video-wrapper">
+                            <video class="events-video" autoplay loop muted>
                                 <source src="./assets/videos/video minify.mp4">
                             </video>
                         </div>
@@ -135,40 +149,40 @@
             </section>
 
             <a name="gallery"></a>
-            <div class="mt-32 flex justify-center">
-                <button data-hystmodal="#myModal" class="button-gallery-open rounded-xl text-8xl font-regular flex items-center" type="button">
-                    Галерея <img class="gallery-icon ml-4" src="./assets/images/icons/gallery.svg" alt="gallery">
+            <div class="info-block">
+                <button data-hystmodal="#myModal" class="button-gallery-open" type="button">
+                    Галерея <img class="gallery-icon" src="./assets/images/icons/gallery.svg" alt="gallery">
                 </button>
             </div>
 
-             <section class="mt-32 mb-32">
+             <section class="info-block">
                 <a name="price-list"></a>
-                <h1 class="title text-8xl font-extrabold">Прайс-лист</h1>
-                <div class="flex mt-6">
-                    <div class="text text-5xl pr-4">
-                        <p class="mt-8">
+                <h1 class="title">Прайс-лист</h1>
+                <div class="price-list-block">
+                    <div class="price-list-block__text-block text">
+                        <p class="mt20">
                             1 ведущий — <span class="emphasis">3</span>часа: <span class="emphasis">24.000</span>₽ (Конкурсная программа + оборудование проектор + экран для проектора + реквизит трансфер, микрофон и колонка)
                         </p>
-                        <p class="mt-8">
+                        <p class="mt20">
                             1 ведущий — <span class="emphasis">4</span>часа: <span class="emphasis">30.000</span>₽ (Конкурсная программа + оборудование: проектор + экран для проектора + реквизит + трансфер, колонка и микрофон)</p>
-                        <p class="mt-8">
+                        <p class="mt20">
                             2 ведущих — <span class="emphasis">3</span> часа: <span class="emphasis">30.000</span>₽
                         </p>
-                        <p class="mt-8">
+                        <p class="mt20">
                             2 ведущих — <span class="emphasis">4</span> часа: <span class="emphasis">40.000</span>₽
                         </p>
-                        <p class="mt-8">
+                        <p class="mt20">
                             2 ведущих — <span class="emphasis">5</span> часов: <span class="emphasis">50.000</span>₽ + диджей отдельно</p>
-                        <p class="mt-8">
+                        <p class="mt20">
                             Средняя стоимость: <span class="emphasis">2.500</span>—<span class="emphasis">3.000</span>₽/Ч
                         </p>
-                        <p class="mt-8">
+                        <p class="mt20">
                             <span class="emphasis">3</span>—<span class="emphasis">4</span> часа диджей на мероприятие будет стоить <span class="emphasis">3.000</span>₽/Ч
                         </p>
-                        <p class="mt-8">
+                        <p class="mt20">
                             От <span class="emphasis">5</span> часов <span class="emphasis">2.500</span>/₽ (Микрофоны, колонки, микшерный пульт, музыка на заказ)
                         </p>
-                        <p class="mt-8">
+                        <p class="mt20">
                             Ведущие: неоднократные финалисты Высшей Лиги КВН, а так же авторы и руководители многих телевизионных проектов.
                             Ведем мероприятия на протяжении 6 лет, в том числе Всероссийские и международные мероприятия
                         </p>
@@ -176,6 +190,9 @@
                     </div>
                 </div>
             </section>
+            <footer>
+                <p class="text">© 2024</p>
+            </footer>
 
             <!-- Модалка -->
             <div class="hystmodal" id="myModal" aria-hidden="true">
@@ -183,15 +200,12 @@
                     <div class="hystmodal__window" role="dialog" aria-modal="true">
                         <button data-hystclose class="hystmodal__close">Закрыть</button>
 
-                        <div id="animated-thumbnails-gallery" class="gallery-grid grid grid-cols-4 gap-2">
+                        <div id="animated-thumbnails-gallery" class="gallery-grid">
                             <a href="./assets/images/gallery/1.jpg">
                                 <img src="./assets/images/gallery/1.jpg" />
                             </a>
                             <a href="./assets/images/gallery/2.jpg">
                                 <img src="./assets/images/gallery/2.jpg" />
-                            </a>
-                            <a href="./assets/images/gallery/3.jpg">
-                                <img src="./assets/images/gallery/3.jpg" />
                             </a>
                             <a href="./assets/images/gallery/4.jpg">
                                 <img src="./assets/images/gallery/4.jpg" />
@@ -199,14 +213,14 @@
                             <a href="./assets/images/gallery/5.jpg">
                                 <img src="./assets/images/gallery/5.jpg" />
                             </a>
+                            <a href="./assets/images/gallery/8.jpg">
+                                <img src="./assets/images/gallery/8.jpg" />
+                            </a>
                             <a href="./assets/images/gallery/6.jpg">
                                 <img src="./assets/images/gallery/6.jpg" />
                             </a>
                             <a href="./assets/images/gallery/7.jpg">
                                 <img src="./assets/images/gallery/7.jpg" />
-                            </a>
-                            <a href="./assets/images/gallery/8.jpg">
-                                <img src="./assets/images/gallery/8.jpg" />
                             </a>
                             <a href="./assets/images/gallery/9.jpg">
                                 <img src="./assets/images/gallery/9.jpg" />
@@ -216,6 +230,9 @@
                             </a>
                             <a href="./assets/images/gallery/11.jpg">
                                 <img src="./assets/images/gallery/11.jpg" />
+                            </a>
+                            <a href="./assets/images/gallery/3.jpg">
+                                <img src="./assets/images/gallery/3.jpg" />
                             </a>
                             <a href="./assets/images/gallery/12.jpg">
                                 <img src="./assets/images/gallery/12.jpg" />

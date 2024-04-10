@@ -1,0 +1,39 @@
+html {
+    font-family: "Bartina";
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+    color: whitesmoke;
+}
+
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
