@@ -1,0 +1,52 @@
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #212121;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.hide {
+    opacity: 0;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: #212121;
+    }
+    100% {
+        background-color: #383838;
+    }
+}
+
+.loader {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 1.5rem solid;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite alternate;
+}
+@keyframes animloader {
+    0% {
+        border-color: white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0)
+            rgba(255, 255, 255, 0);
+    }
+    33% {
+        border-color: white white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    }
+    66% {
+        border-color: white white white rgba(255, 255, 255, 0);
+    }
+    100% {
+        border-color: white white white white;
+    }
+}

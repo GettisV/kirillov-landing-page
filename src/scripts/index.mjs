@@ -5,3 +5,28 @@ const Modal = new HystModal({
 lightGallery(document.getElementById('animated-thumbnails-gallery'), {
     thumbnail: true,
 });
+
+function removeLoader() {
+    const loader = document.querySelector('.loader-wrapper');
+
+    loader.classList.add('hide');
+
+    setTimeout(() => {
+        loader.remove();
+    }, 1000)
+}
+
+function scrollbarShow() {
+    const url = '/src/styles/default/scrollbar-show.css'
+
+    const cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = url;
+    document.head.appendChild(cssLink);
+}
+
+window.onload = function () {
+    removeLoader();
+    scrollbarShow();
+    console.clear();
+}

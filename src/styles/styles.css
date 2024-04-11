@@ -1,11 +1,19 @@
 @import url(./default/reset.css);
 @import url(./default/fonts.css);
 @import url(./default/base.css);
-@import url(./default/scrollbar.css);
+@import url(./default/scrollbar-hide.css);
 
-@import url(./hystmodal.css);
-@import url(./lightGallery.css);
+@import url(./plugins/hystmodal.css);
+@import url(./plugins/lightGallery.css);
+
 @import url(./media.css);
+@import url(./loader.css);
+@import url(./dynamic-ascent.css);
+
+body {
+    background-color: #212121;
+    color: whitesmoke;
+}
 
 header {
     position: relative;
@@ -21,7 +29,8 @@ a {
     align-items: left;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    font-weight: 100;
 }
 
 .social-media {
@@ -45,12 +54,14 @@ a {
 }
 
 .telephone {
+    width: max-content;
 }
 
 /* ---------- */
 
 .host-event-info {
     display: flex;
+    margin-top: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -75,17 +86,18 @@ a {
 
 .host-event-about__name {
     font-size: 6rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .host-event-about__activity {
     font-size: 3rem;
     font-weight: 300;
+    opacity: 0.9;
 }
 
 .navbar {
     position: absolute;
-    top: 20%;
+    top: 25%;
     right: -300px;
     display: flex;
     flex-direction: column;
@@ -96,11 +108,12 @@ a {
     border-radius: 0.75rem;
     border: 2px solid whitesmoke;
     transition: all 0.3s ease-in;
+    padding: 15px 35px;
 }
 
 .navbar__btn:hover {
+    color: #212121;
     background-color: whitesmoke;
-    border: 2px solid whitesmoke;
     transition: all 0.3s ease-in;
 }
 
@@ -108,9 +121,10 @@ a {
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 2rem;
-    text-align: left;
-    padding: 15px 35px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .navbar__btn:hover a {
