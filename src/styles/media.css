@@ -1,0 +1,170 @@
+@media (max-width: 1400px) {
+    .navbar {
+        right: -270px;
+    }
+}
+@media (max-width: 1200px) {
+    .host-event-image {
+        width: 25rem;
+    }
+
+    .navbar {
+        right: -260px;
+    }
+
+    .host-event-about {
+        left: -165px;
+        bottom: 65px;
+    }
+
+    .host-event-about__name {
+        font-size: 4rem;
+    }
+
+    .host-event-about__activity {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 992px) {
+    .navbar {
+        top: auto;
+        left: -35px;
+        bottom: -250px;
+        width: 25rem;
+        height: 200px;
+        flex-wrap: wrap;
+    }
+
+    .navbar__a {
+        margin: 5px;
+        font-size: 2rem;
+    }
+
+    .about-me-info-block {
+        margin-top: 250px;
+    }
+
+    .about-me-text-block {
+        flex-wrap: wrap-reverse;
+    }
+
+    .about-me-text-block__image {
+        margin: 30px 0;
+        width: 40%;
+    }
+
+    .events-video {
+        transform: scale(1.3);
+    }
+}
+@media (max-width: 768px) {
+    .contacts-block {
+        align-items: center;
+    }
+
+    .host-event-about {
+        left: -63px;
+        bottom: 41px;
+    }
+
+    .host-event-about__name {
+        font-size: 3.3rem;
+    }
+
+    .host-event-about__activity {
+        font-size: 1.7rem;
+    }
+
+    .events-block {
+        flex-wrap: wrap;
+    }
+
+    .events-block__video-block {
+        margin-top: 50px;
+    }
+
+    .emphasis {
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .text {
+        font-size: 1.7rem;
+    }
+
+    .host-event-image {
+        width: 100%;
+    }
+
+    .host-event-about {
+        left: 18px;
+        bottom: 55px;
+    }
+
+    .host-event-about__name {
+        text-shadow: 1px 1px 13px black;
+    }
+
+    .host-event-about__activity {
+        opacity: 1;
+    }
+
+    .navbar {
+        bottom: -380px;
+        left: 0;
+        max-width: 100%;
+        height: 350px;
+    }
+
+    .navbar__a {
+        margin: 5px 0;
+        font-size: 1.7rem;
+    }
+
+    .about-me-text-block__image {
+        width: 15rem;
+    }
+
+    .about-me-info-block {
+        margin-top: 350px;
+    }
+
+    .events-list__item img {
+        transform: scale(0.7);
+        margin-right: 5px;
+    }
+
+    .events-block__video-block {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .events-video {
+        transform: scale(1.7);
+    }
+
+    .button-gallery-open {
+        width: 100%;
+    }
+
+    .gallery-grid img {
+        width: 170px;
+    }
+
+    .gallery-grid a {
+        text-align: center;
+        width: auto;
+    }
+
+    .hystmodal__close {
+        margin-right: 5px;
+    }
+}

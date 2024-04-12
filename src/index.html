@@ -2,10 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Плагины -->
         <link
@@ -14,7 +11,28 @@
         />
         <link rel="stylesheet" href="./plugins/hystModal/hystmodal.min.css" />
 
+        <!-- Шрифты -->
+        <link
+            rel="preload"
+            href="./assets/fonts/BartinaBold.ttf"
+            as="font"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="./assets/fonts/BartinaLight.ttf"
+            as="font"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="./assets/fonts/BartinaThin.ttf"
+            as="font"
+            crossorigin="anonymous"
+        />
+
         <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/media.css" />
         <link
             rel="icon"
             type="image/png"
@@ -34,33 +52,36 @@
                     <div class="social-media">
                         <p class="social-media__text">я в соц. сетях</p>
                         <a
-                            class="social-media__btn"
+                            class="social-media__a"
                             href="https://t.me/ArtKirill_51"
                             target="_blank"
                         >
                             <img
                                 src="./assets/images/icons/social-media/telegram.svg"
                                 alt="Telegram"
+                                loading="eager"
                             />
                         </a>
                         <a
-                            class="social-media__btn"
+                            class="social-media__a"
                             href="https://vk.com/tema_kirillov"
                             target="_blank"
                         >
                             <img
                                 src="./assets/images/icons/social-media/vk.svg"
                                 alt="VK"
+                                loading="eager"
                             />
                         </a>
                         <a
-                            class="social-media__btn"
+                            class="social-media__a"
                             href="https://api.whatsapp.com/send/?phone=79009349325&text&type=phone_number&app_absent=0"
                             target="_blank"
                         >
                             <img
                                 src="./assets/images/icons/social-media/whatsapp.svg"
                                 alt="Whatsapp"
+                                loading="eager"
                             />
                         </a>
                     </div>
@@ -79,6 +100,7 @@
                                 src="./assets/images/main.png"
                                 class="host-event-image"
                                 alt="main"
+                                loading="eager"
                             />
                         </div>
 
@@ -92,12 +114,10 @@
                         </div>
 
                         <nav class="navbar">
-                            <a class="navbar__btn" href="#about-me">Обо мне</a>
-                            <a class="navbar__btn" href="#events"
-                                >Мероприятия</a
-                            >
-                            <a class="navbar__btn" href="#gallery">Галерея</a>
-                            <a class="navbar__btn" href="#price-list"
+                            <a class="navbar__a" href="#about-me">Обо мне</a>
+                            <a class="navbar__a" href="#events">Мероприятия</a>
+                            <a class="navbar__a" href="#gallery">Галерея</a>
+                            <a class="navbar__a" href="#price-list"
                                 >Прайс-лист</a
                             >
                         </nav>
@@ -135,6 +155,8 @@
                     <img
                         class="about-me-text-block__image"
                         src="./assets/images/about-me.jpg"
+                        alt="about-me"
+                        loading="eager"
                     />
                 </div>
             </section>
@@ -144,59 +166,74 @@
                 <p class="title">Мероприятия</p>
                 <div class="events-block">
                     <ul class="events-list text">
-                        <div class="events-list__item">
+                        <li class="events-list__item">
                             <img
                                 src="./assets/images/icons/done.svg"
                                 alt="accept"
+                                loading="eager"
                             />
-                            <li>Дни рождения</li>
-                        </div>
-                        <div class="events-list__item">
+                            <p class="text">Дни рождения</p>
+                        </li>
+                        <li class="events-list__item">
                             <img
                                 src="./assets/images/icons/done.svg"
                                 alt="accept"
+                                loading="eager"
                             />
-                            <li>Юбилеи</li>
-                        </div>
-                        <div class="events-list__item">
+                            <p class="text">Юбилеи</p>
+                        </li>
+                        <li class="events-list__item">
                             <img
                                 src="./assets/images/icons/done.svg"
                                 alt="accept"
+                                loading="eager"
                             />
-                            <li>Свадьбы</li>
-                        </div>
-                        <div class="events-list__item">
+                            <p class="text">Свадьбы</p>
+                        </li>
+                        <li class="events-list__item">
                             <img
                                 src="./assets/images/icons/done.svg"
                                 alt="accept"
+                                loading="eager"
                             />
-                            <li>Корпоративы</li>
-                        </div>
-                        <div class="events-list__item">
+                            <p class="text">Корпоративы</p>
+                        </li>
+                        <li class="events-list__item">
                             <img
                                 src="./assets/images/icons/done.svg"
                                 alt="accept"
+                                loading="eager"
                             />
-                            <li>Награждения</li>
-                        </div>
-                        <div class="events-list__item">
+                            <p class="text">Награждения</p>
+                        </li>
+                        <li class="events-list__item">
                             <img
                                 src="./assets/images/icons/done.svg"
                                 alt="accept"
+                                loading="eager"
                             />
-                            <li>Тимбилдинги</li>
-                        </div>
-                        <div class="events-list__item">
+                            <p class="text">Тимбилдинги</p>
+                        </li>
+                        <li class="events-list__item">
                             <img
                                 src="./assets/images/icons/done.svg"
                                 alt="accept"
+                                loading="eager"
                             />
-                            <li>Протокольные мероприятия</li>
-                        </div>
+                            <p class="text">Протокольные мероприятия</p>
+                        </li>
                     </ul>
                     <div class="events-block__video-block">
                         <div class="events-video-wrapper">
-                            <video class="events-video" autoplay loop muted>
+                            <video
+                                class="events-video"
+                                poster
+                                preload="none"
+                                autoplay
+                                playsinline
+                                loop
+                                muted
+                            >
                                 <source src="./assets/videos/video.mp4" />
                             </video>
                         </div>
@@ -213,6 +250,7 @@
                 >
                     Галерея
                     <img
+                        loading="eager"
                         class="gallery-icon"
                         src="./assets/images/icons/gallery.svg"
                         alt="gallery"
@@ -294,64 +332,144 @@
 
                     <div id="animated-thumbnails-gallery" class="gallery-grid">
                         <a href="./assets/images/gallery/1.jpg">
-                            <img src="./assets/images/gallery/1.jpg" />
+                            <img
+                                src="./assets/images/gallery/1.jpg"
+                                alt="1"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/2.jpg">
-                            <img src="./assets/images/gallery/2.jpg" />
-                        </a>
-                        <a href="./assets/images/gallery/4.jpg">
-                            <img src="./assets/images/gallery/4.jpg" />
-                        </a>
-                        <a href="./assets/images/gallery/5.jpg">
-                            <img src="./assets/images/gallery/5.jpg" />
-                        </a>
-                        <a href="./assets/images/gallery/8.jpg">
-                            <img src="./assets/images/gallery/8.jpg" />
-                        </a>
-                        <a href="./assets/images/gallery/6.jpg">
-                            <img src="./assets/images/gallery/6.jpg" />
-                        </a>
-                        <a href="./assets/images/gallery/7.jpg">
-                            <img src="./assets/images/gallery/7.jpg" />
-                        </a>
-                        <a href="./assets/images/gallery/9.jpg">
-                            <img src="./assets/images/gallery/9.jpg" />
-                        </a>
-                        <a href="./assets/images/gallery/10.jpg">
-                            <img src="./assets/images/gallery/10.jpg" />
-                        </a>
-                        <a href="./assets/images/gallery/11.jpg">
-                            <img src="./assets/images/gallery/11.jpg" />
+                            <img
+                                src="./assets/images/gallery/2.jpg"
+                                alt="2"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/3.jpg">
-                            <img src="./assets/images/gallery/3.jpg" />
+                            <img
+                                src="./assets/images/gallery/3.jpg"
+                                alt="3"
+                                loading="lazy"
+                            />
+                        </a>
+                        <a href="./assets/images/gallery/4.jpg">
+                            <img
+                                src="./assets/images/gallery/4.jpg"
+                                alt="4"
+                                loading="lazy"
+                            />
+                        </a>
+                        <a href="./assets/images/gallery/5.jpg">
+                            <img
+                                src="./assets/images/gallery/5.jpg"
+                                alt="5"
+                                loading="lazy"
+                            />
+                        </a>
+                        <a href="./assets/images/gallery/6.jpg">
+                            <img
+                                src="./assets/images/gallery/6.jpg"
+                                alt="6"
+                                loading="lazy"
+                            />
+                        </a>
+                        <a href="./assets/images/gallery/7.jpg">
+                            <img
+                                src="./assets/images/gallery/7.jpg"
+                                alt="7"
+                                loading="lazy"
+                            />
+                        </a>
+                        <a href="./assets/images/gallery/8.jpg">
+                            <img
+                                src="./assets/images/gallery/8.jpg"
+                                alt="8"
+                                loading="lazy"
+                            />
+                        </a>
+                        <a href="./assets/images/gallery/9.jpg">
+                            <img
+                                src="./assets/images/gallery/9.jpg"
+                                alt="9"
+                                loading="lazy"
+                            />
+                        </a>
+                        <a href="./assets/images/gallery/10.jpg">
+                            <img
+                                src="./assets/images/gallery/10.jpg"
+                                alt="10"
+                                loading="lazy"
+                            />
+                        </a>
+                        <a href="./assets/images/gallery/11.jpg">
+                            <img
+                                src="./assets/images/gallery/11.jpg"
+                                alt="11"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/12.jpg">
-                            <img src="./assets/images/gallery/12.jpg" />
+                            <img
+                                src="./assets/images/gallery/12.jpg"
+                                alt="12"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/13.jpg">
-                            <img src="./assets/images/gallery/13.jpg" />
+                            <img
+                                src="./assets/images/gallery/13.jpg"
+                                alt="13"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/14.jpg">
-                            <img src="./assets/images/gallery/14.jpg" />
+                            <img
+                                src="./assets/images/gallery/14.jpg"
+                                alt="14"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/15.jpg">
-                            <img src="./assets/images/gallery/15.jpg" />
+                            <img
+                                src="./assets/images/gallery/15.jpg"
+                                alt="15"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/16.jpg">
-                            <img src="./assets/images/gallery/16.jpg" />
+                            <img
+                                src="./assets/images/gallery/16.jpg"
+                                alt="16"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/17.jpg">
-                            <img src="./assets/images/gallery/17.jpg" />
+                            <img
+                                src="./assets/images/gallery/17.jpg"
+                                alt="17"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/18.jpg">
-                            <img src="./assets/images/gallery/18.jpg" />
+                            <img
+                                src="./assets/images/gallery/18.jpg"
+                                alt="18"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/19.jpg">
-                            <img src="./assets/images/gallery/19.jpg" />
+                            <img
+                                src="./assets/images/gallery/19.jpg"
+                                alt="19"
+                                loading="lazy"
+                            />
                         </a>
                         <a href="./assets/images/gallery/20.jpg">
-                            <img src="./assets/images/gallery/20.jpg" />
+                            <img
+                                src="./assets/images/gallery/20.jpg"
+                                alt="20"
+                                loading="lazy"
+                            />
                         </a>
                     </div>
                 </div>

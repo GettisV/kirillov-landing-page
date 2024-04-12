@@ -25,8 +25,8 @@ function scrollbarShow() {
     document.head.appendChild(cssLink);
 }
 
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', () => {
     removeLoader();
     scrollbarShow();
     console.clear();
-}
+})
