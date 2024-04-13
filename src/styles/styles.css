@@ -1,12 +1,10 @@
-@import url(./default/reset.css);
-@import url(./default/fonts.css);
-@import url(./default/base.css);
-@import url(./default/scrollbar-hide.css);
-
-@import url(./plugins/hystmodal.css);
-@import url(./plugins/lightGallery.css);
-
-@import url(./loader.css);
+@import "./default/reset.css";
+@import "./default/fonts.css";
+@import "./default/base.css";
+@import "./default/scrollbar-hide.css";
+@import "./plugins/hystmodal.css";
+@import "./plugins/lightGallery.css";
+@import "./loader.css";
 
 body {
     background-color: #212121;

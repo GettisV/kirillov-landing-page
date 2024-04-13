@@ -17,7 +17,7 @@ function removeLoader() {
 }
 
 function scrollbarShow() {
-    const url = '/src/styles/default/scrollbar-show.css'
+    const url = '../styles/default/scrollbar-show.css'
 
     const cssLink = document.createElement('link');
     cssLink.rel = 'stylesheet';

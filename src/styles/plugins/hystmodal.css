@@ -15,6 +15,11 @@
     top: 10px;
 }
 
+[role="status"],
+[aria-label="Download"] {
+    display: none;
+}
+
 @media (max-width: 1536px) {
     .hystmodal__window {
         width: 1000px;
