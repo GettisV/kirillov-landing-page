@@ -1,6 +1,6 @@
 {
-    "author": "",
-    "description": "",
+    "author": "Gettis",
+    "description": "landing page",
     "devDependencies": {
         "@babel/cli": "^7.24.1",
         "@babel/core": "^7.24.4",
