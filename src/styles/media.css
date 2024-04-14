@@ -97,7 +97,7 @@
     }
 
     .text {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 
     .host-event-image {
@@ -105,7 +105,7 @@
     }
 
     .host-event-about {
-        left: 18px;
+        left: 10px;
         bottom: 55px;
     }
 
@@ -134,7 +134,7 @@
     }
 
     .about-me-info-block {
-        margin-top: 350px;
+        margin-top: 380px;
     }
 
     .events-list__item img {
