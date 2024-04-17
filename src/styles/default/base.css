@@ -5,6 +5,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    max-width: 100%;
+    opacity: 0;
+}
+
 img {
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -20,7 +25,8 @@ button {
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: 140px;
     display: flex;
     justify-content: center;
 }

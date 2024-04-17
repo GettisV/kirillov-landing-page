@@ -13,7 +13,13 @@ function removeLoader() {
 
     setTimeout(() => {
         loader.remove();
-    }, 1000)
+    }, 500)
+}
+
+function bodyShow() {
+    const body = document.body;
+
+    body.classList.add('show')
 }
 
 function scrollbarShow() {
@@ -27,6 +33,6 @@ function scrollbarShow() {
 
 document.addEventListener('DOMContentLoaded', () => {
     removeLoader();
+    bodyShow();
     scrollbarShow();
-    console.clear();
 })

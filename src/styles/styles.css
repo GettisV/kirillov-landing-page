@@ -30,7 +30,7 @@ a {
     justify-content: center;
     flex-direction: column;
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .social-media {
@@ -55,6 +55,13 @@ a {
 
 .telephone {
     width: max-content;
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+}
+
+.telephone:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
 }
 
 /* ---------- */
@@ -220,8 +227,24 @@ a {
 }
 
 .emphasis {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     opacity: 1;
     color: #29e79b;
+}
+
+.ads-block {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    z-index: 999;
+}
+
+/* ------ */
+
+.show {
+    opacity: 1;
+    transition: opacity 1s ease-in;
 }

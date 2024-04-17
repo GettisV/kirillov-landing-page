@@ -167,4 +167,8 @@
     .hystmodal__close {
         margin-right: 5px;
     }
+
+    .emphasis {
+        font-size: 2.1rem;
+    }
 }
