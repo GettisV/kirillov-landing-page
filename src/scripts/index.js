@@ -16,10 +16,10 @@ function removeLoader() {
     }, 500)
 }
 
-function bodyShow() {
-    const body = document.body;
+function containerShow() {
+    const container = document.querySelector('.container');
 
-    body.classList.add('show')
+    container.classList.add('show')
 }
 
 function scrollbarShow() {
@@ -33,6 +33,6 @@ function scrollbarShow() {
 
 document.addEventListener('DOMContentLoaded', () => {
     removeLoader();
-    bodyShow();
+    containerShow();
     scrollbarShow();
 })
