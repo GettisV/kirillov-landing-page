@@ -39,10 +39,12 @@ footer {
 }
 
 .container {
+    opacity: 0;
     max-width: 1200px;
     padding: 20px;
     margin: 0 auto;
     overflow: hidden;
+    transition: opacity 1s ease-in;
 }
 
 @media (max-width: 1400px) {
