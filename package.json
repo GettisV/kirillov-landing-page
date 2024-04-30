@@ -1,16 +1,14 @@
 {
-    "author": "Gettis",
-    "description": "landing page",
+    "author": "Fedyuncev",
+    "description": "",
     "devDependencies": {
-        "@babel/cli": "^7.24.1",
-        "@babel/core": "^7.24.4",
-        "@babel/preset-env": "^7.24.4"
+        "parcel": "^2.12.0"
     },
     "license": "ISC",
-    "main": "index.js",
-    "name": "kirillov",
+    "name": "Landing page",
     "scripts": {
-        "build": "babel src -d build"
+        "start:dev": "npx parcel src/index.html --open",
+        "build:prod": "npx parcel build src/index.html"
     },
     "version": "1.0.0"
 }
